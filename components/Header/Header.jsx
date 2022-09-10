@@ -1,9 +1,10 @@
 import { AppBar, Box, IconButton, Toolbar } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 
-import Logo from '../Logo/Logo'
+import Logo from './Logo'
 import { useState } from 'react'
 import HeaderDrawer from './HeaderDrawer'
+import Navbar from './Navbar'
 
 const Header = () => {
   const [drawer, setDrawer] = useState(false)
@@ -23,6 +24,7 @@ const Header = () => {
           <Toolbar>
             <Logo />
             <Box flexGrow={1}></Box>
+            <Navbar />
             <IconButton
               size={'large'}
               edge={'start'}

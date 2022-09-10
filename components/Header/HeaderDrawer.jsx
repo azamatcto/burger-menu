@@ -94,12 +94,14 @@ const HeaderDrawer = ({ drawer, handleDrawerOpen, handleDrawerClose }) => {
             </List>
           </Collapse>
 
-          <ListItemButton>
-            <ListItemIcon>
-              <SendIcon />
-            </ListItemIcon>
-            <ListItemText primary="Sent mail" />
-          </ListItemButton>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <SendIcon />
+              </ListItemIcon>
+              <ListItemText primary="Sent mail" />
+            </ListItemButton>
+          </ListItem>
         </List>
       </SwipeableDrawer>
     </Box>
